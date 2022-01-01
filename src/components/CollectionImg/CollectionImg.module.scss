@@ -1,0 +1,88 @@
+@import '../../app/globalStyles.scss';
+
+.collection-img {
+	&__box {
+		object-fit: cover;
+		object-position: center;
+		transition: all 0.5s;
+		box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+		z-index: 10;
+		outline-offset: 5px;
+		position: absolute;
+		&--1 {
+			width: 30rem;
+			height: 40rem;
+			top: 0;
+		}
+		&--2 {
+			width: 30rem;
+			height: 40rem;
+			left: 10rem;
+			top: 10rem;
+		}
+
+		&--3 {
+			width: 30rem;
+			height: 20rem;
+			left: -7rem;
+			top: 10rem;
+		}
+
+		&:hover {
+			outline: 1rem solid color(primary, a);
+			transform: scale(1.03);
+			box-shadow: 0 1.5rem 4rem rgba(color(secondary, b), 0.5);
+			z-index: 20;
+		}
+	}
+	&__photo {
+		width: 100%;
+		height: 100%;
+	}
+
+	@media (max-width: 1100px) {
+		&__box {
+			&--1 {
+				width: 20rem;
+				height: 30rem;
+				top: 0;
+			}
+			&--2 {
+				width: 20rem;
+				height: 30rem;
+				left: 20%;
+				top: -50%;
+			}
+
+			&--3 {
+				width: 20rem;
+				height: 12rem;
+				left: -50%;
+				top: -120%;
+			}
+		}
+	}
+
+	@media (max-width: 1100px) {
+		&__box {
+			&--1 {
+				width: 20rem;
+				height: 30rem;
+				top: 0;
+			}
+			&--2 {
+				width: 20rem;
+				height: 30rem;
+				left: 20%;
+				top: -50%;
+			}
+
+			&--3 {
+				width: 20rem;
+				height: 12rem;
+				left: -10%;
+				top: -120%;
+			}
+		}
+	}
+}

@@ -1,0 +1,39 @@
+@import '../../app/globalStyles.scss';
+
+.accordion-item {
+	&__question {
+		background-image: linear-gradient(
+			to right,
+			color(primary, b),
+			color(primary, a)
+		);
+		padding: 1rem 1.5rem;
+		cursor: pointer;
+		color: color(neutral, a);
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__icon {
+		font-size: 2rem;
+		font-weight: 600;
+	}
+
+	&__title {
+	}
+
+	&__answer {
+		background-color: color(neutral, a);
+		box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+		overflow: hidden;
+		transition: all 0.3s;
+		height: 0;
+		&.active {
+			&__answer {
+				height: max-content;
+				padding: 1.5rem;
+			}
+		}
+	}
+}
