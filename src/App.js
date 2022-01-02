@@ -35,7 +35,7 @@ function App() {
 					/>
 					<Route
 						exact
-						path='/amadeus-landing-react/book'
+						path='/amadeus-landing-react/#/book'
 						element={<BookPage defaultValue={change} />}
 					/>
 				</Routes>
