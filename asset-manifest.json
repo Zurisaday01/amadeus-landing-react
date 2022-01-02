@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/amadeus-landing-react/static/css/main.9b31389f.css",
-    "main.js": "/amadeus-landing-react/static/js/main.2674f2c9.js",
+    "main.js": "/amadeus-landing-react/static/js/main.192753be.js",
     "static/media/landscape.mp4": "/amadeus-landing-react/static/media/landscape.8f6a37599aaad951379d.mp4",
     "static/media/adventures-3.jpg": "/amadeus-landing-react/static/media/adventures-3.f3440847ec010d8e53d6.jpg",
     "static/media/adventures-2.jpg": "/amadeus-landing-react/static/media/adventures-2.4c5312ed2c95768c3d31.jpg",
@@ -9,10 +9,10 @@
     "static/media/adventures-1.jpeg": "/amadeus-landing-react/static/media/adventures-1.361ee7ac9bde83d35f03.jpeg",
     "index.html": "/amadeus-landing-react/index.html",
     "main.9b31389f.css.map": "/amadeus-landing-react/static/css/main.9b31389f.css.map",
-    "main.2674f2c9.js.map": "/amadeus-landing-react/static/js/main.2674f2c9.js.map"
+    "main.192753be.js.map": "/amadeus-landing-react/static/js/main.192753be.js.map"
   },
   "entrypoints": [
     "static/css/main.9b31389f.css",
-    "static/js/main.2674f2c9.js"
+    "static/js/main.192753be.js"
   ]
 }
