@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 
 const LogoHotel = () => {
 	return (
-		<Link className={styles['logo']} to='/amadeus-landing-react'>
+		<Link className={styles['logo']} to='/'>
 			<img className={styles['logo__img']} src={Logo} />
 		</Link>
 	);

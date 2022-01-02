@@ -10,7 +10,7 @@ const CustomBtn = ({
 	...otherProps
 }) => {
 	const actions = () => {
-		if (navigate) navigate('/amadeus-landing-react/book');
+		if (navigate) navigate('/book');
 
 		if (toggle) toggle();
 	};
