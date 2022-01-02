@@ -30,12 +30,12 @@ function App() {
 				<Routes>
 					<Route
 						exact
-						path='/'
+						path='/amadeus-landing-react'
 						element={<HomePage sectionRef={sectionRef} />}
 					/>
 					<Route
 						exact
-						path='/book'
+						path='/amadeus-landing-react/book'
 						element={<BookPage defaultValue={change} />}
 					/>
 				</Routes>
