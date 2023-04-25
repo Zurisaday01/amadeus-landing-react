@@ -1,0 +1,39 @@
+@import './app/globalStyles.scss';
+
+body {
+	padding: 2.3rem;
+	background-color: color(neutral, a);
+	font-size: 1.7rem;
+
+	@media (max-width: 750px) {
+		padding: 0;
+	}
+}
+
+.heading {
+	text-transform: uppercase;
+	font-family: 'Josefin Sans', sans-serif;
+
+	&--secondary {
+		color: transparent;
+		background-image: linear-gradient(
+			to right,
+			color(primary, a),
+			color(primary, b)
+		);
+		-webkit-background-clip: text;
+		background-clip: text;
+		font-weight: 600;
+		font-size: 2.8rem;
+	}
+
+	&--third {
+		color: color(neutral, b);
+	}
+}
+
+.paragraph {
+	color: color(neutral, b);
+	line-height: 1.6;
+	font-size: 1.6rem;
+}

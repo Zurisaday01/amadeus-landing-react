@@ -1,0 +1,80 @@
+@import '../../app/globalStyles.scss';
+
+.meet-us {
+	margin-top: 13rem;
+	background-image: linear-gradient(
+		to left bottom,
+		color(primary, a),
+		color(primary, b)
+	);
+	width: 100%;
+	position: relative;
+	padding: 10rem 0;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	&__information {
+		position: absolute;
+		top: 1rem;
+		left: 1rem;
+		width: 40rem;
+		min-width: 30rem;
+		background-color: color(neutral, a);
+		padding: 2rem;
+		box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+		z-index: 2;
+	}
+
+	&__text {
+		display: flex;
+		flex-direction: column;
+		gap: 1rem;
+	}
+
+	&__resource {
+		box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+		transition: all 0.3s;
+
+		&:hover {
+			z-index: 3;
+		}
+	}
+
+	&__video {
+		width: 58vw;
+		height: 33vw;
+		transition: all 0.7s;
+	}
+
+	@media (max-width: 1000px) {
+		display: flex;
+		justify-content: center;
+		align-items: end;
+		padding: 7rem 0;
+
+		&__information {
+			top: 5rem;
+			position: absolute;
+			left: 50%;
+			width: 50vw;
+			margin-bottom: 5rem;
+			transform: translateX(-50%);
+			text-align: center;
+		}
+
+		&__resource {
+			margin-top: 35rem;
+		}
+		&__video {
+			width: 80vw;
+			height: 45vw;
+		}
+	}
+
+	@media (max-width: 450px) {
+		&__information {
+			width: 70%;
+		}
+	}
+}

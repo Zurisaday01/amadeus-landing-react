@@ -1,0 +1,57 @@
+@import '../../app/globalStyles.scss';
+.container {
+	height: 92vh;
+	width: 100%;
+	background-image: linear-gradient(
+		to bottom left,
+		color(primary, a),
+		color(primary, b)
+	);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+	@media (max-width: 750px) {
+		height: 100vh;
+	}
+}
+
+.content {
+	background-color: color(neutral, a);
+	width: 50rem;
+	padding: 3rem;
+	text-align: center;
+	box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+	position: relative;
+
+	& h2 {
+		margin-bottom: 2.5rem;
+	}
+
+	@media (max-width: 750px) {
+		width: 30rem;
+		padding-top: 5rem;
+	}
+}
+
+.btn-back {
+	background-color: transparent;
+	color: #7c7c7c;
+	border: none;
+	cursor: pointer;
+	transition: all 0.3s;
+	font-size: 2rem;
+	position: absolute;
+	top: 1rem;
+	left: 2rem;
+
+	& span {
+		font-size: 1.5rem;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	&:hover {
+		transform: translateX(-5px);
+	}
+}

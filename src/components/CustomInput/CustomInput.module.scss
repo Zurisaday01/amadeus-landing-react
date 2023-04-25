@@ -1,0 +1,10 @@
+.input {
+	border: 2px solid hsl(0, 0%, 80%);
+	outline: none;
+	width: 100%;
+	padding: 1rem;
+
+	&::placeholder {
+		color: hsl(0, 0%, 62%);
+	}
+}

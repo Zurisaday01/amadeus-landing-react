@@ -1,0 +1,100 @@
+@import '../../app/globalStyles.scss';
+
+.header {
+	position: absolute;
+	z-index: 3000;
+	height: 8rem;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	top: 2.3rem;
+	left: 0;
+	transition: height 0.5s;
+
+	&.sticky {
+		position: fixed;
+		background-color: rgba(color(primary, a), 0.8);
+		box-shadow: 0 1rem 4rem rgba(color(secondary, b), 0.4);
+		transform: translateY(-2.3rem);
+		height: 6rem;
+
+		@media (max-width: 750px) {
+			transform: translateY(-0rem);
+		}
+	}
+
+	@media (max-width: 750px) {
+		top: 0;
+	}
+
+	&__options {
+		color: color(neutral, a);
+		display: flex;
+		gap: 2rem;
+	}
+
+	&__option {
+		text-decoration: none;
+		color: color(neutral, a);
+		cursor: pointer;
+		transition: all 0.3s;
+		position: relative;
+		font-size: 1.7rem;
+
+		&::after {
+			content: '';
+			width: 100%;
+			height: 1px;
+			background-color: rgba(color(neutral, a), 0.6);
+			position: absolute;
+			bottom: -5px;
+			left: 50%;
+			transform: translateX(-50%);
+			transition: all 0.3s;
+			visibility: hidden;
+			opacity: 0;
+		}
+
+		&:hover {
+			&::after {
+				visibility: visible;
+				opacity: 1;
+			}
+		}
+
+		&:not(.lowercase) {
+			text-transform: uppercase;
+		}
+	}
+
+	& .left {
+		display: flex;
+		margin-right: 4rem;
+		align-items: center;
+		gap: 3rem;
+		@media (max-width: 750px) {
+			display: none;
+		}
+	}
+
+	&__btn {
+		background-color: transparent;
+		color: color(neutral, a);
+
+		cursor: pointer;
+		border: none;
+		outline: none;
+		font-size: 2.5rem;
+		position: absolute;
+		right: 2.5rem;
+		transition: all 0.3s;
+		display: none;
+		top: 50%;
+		transform: translateY(-50%);
+
+		@media (max-width: 750px) {
+			display: block;
+		}
+	}
+}

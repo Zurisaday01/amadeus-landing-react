@@ -1,0 +1,48 @@
+@import '../../app/globalStyles.scss';
+.footer {
+	height: 25rem;
+	background-image: linear-gradient(
+		to left bottom,
+		color(primary, a),
+		color(primary, b)
+	);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	&__logo {
+		height: 50%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	&__options {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		gap: 2rem;
+		cursor: pointer;
+		border-top: 1px solid color(neutral, a);
+		padding-top: 1rem;
+		text-transform: uppercase;
+
+		@media (max-width: 690px) {
+			flex-direction: column;
+			align-items: center;
+			gap: 1rem;
+		}
+	}
+
+	&__option {
+		color: color(neutral, a);
+		transition: all 0.3s;
+		&:hover {
+			font-weight: 600;
+		}
+	}
+
+	@media (max-width: 690px) {
+		height: 30rem;
+		padding-bottom: 3rem;
+	}
+}

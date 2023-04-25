@@ -1,0 +1,20 @@
+// VARIABLES
+$COLOR: (
+	'primary': (
+		a: hsl(203, 96%, 43%),
+		b: hsl(208, 96%, 28%),
+	),
+	'secondary': (
+		a: hsl(45, 96%, 43%),
+		b: hsl(39, 100%, 18%),
+	),
+	'neutral': (
+		a: hsl(51, 33%, 96%),
+		b: hsla(0, 0%, 46%, 0.8),
+	),
+);
+
+// FUNCTION
+@function color($el, $var) {
+	@return map-get(map-get($COLOR, $el), $var);
+}

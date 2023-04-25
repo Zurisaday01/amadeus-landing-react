@@ -1,0 +1,76 @@
+@import '../../app/globalStyles.scss';
+
+.sidebar {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(
+		to bottom left,
+		color(primary, a),
+		color(primary, b)
+	);
+	position: fixed;
+	z-index: 5000;
+	left: 0;
+	transition: all 0.3s ease-in-out;
+
+	&.open {
+		top: 0;
+		visibility: visible;
+		opacity: 1;
+	}
+
+	&.close {
+		top: -100%;
+		visibility: hidden;
+		opacity: 0;
+	}
+
+	&__options {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		height: 100%;
+		justify-content: center;
+		gap: 3rem;
+		font-size: 3rem;
+	}
+
+	&__option {
+		text-decoration: none;
+		color: color(neutral, a);
+		cursor: pointer;
+		transition: all 0.3s;
+		position: relative;
+		width: 20rem;
+		min-width: max-content;
+		text-align: center;
+		&::after {
+			content: '';
+			height: 100%;
+			width: 0%;
+			background-color: color(neutral, a);
+			z-index: -1;
+			transition: all 0.3s ease-in-out;
+			position: absolute;
+			left: 0;
+		}
+
+		&:hover {
+			color: color(secondary, b);
+			&::after {
+				width: 100%;
+			}
+		}
+	}
+	&__close {
+		background-color: transparent;
+		color: color(neutral, a);
+		cursor: pointer;
+		border: none;
+		outline: none;
+		font-size: 2.5rem;
+		position: absolute;
+		right: 2.2rem;
+		top: 2.2rem;
+	}
+}
