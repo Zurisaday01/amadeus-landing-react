@@ -1,4 +1,15 @@
 @import './app/globalStyles.scss';
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	/* 10px */
+	font-size: 62.5%;
+}
 
 body {
 	padding: 2.3rem;

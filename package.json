@@ -2,7 +2,7 @@
 	"name": "amadeus",
 	"version": "0.1.0",
 	"private": true,
-	"homepage": "http://zurisaday01.github.io/amadeus-landing-react",
+	"homepage": "/",
 	"dependencies": {
 		"@emailjs/browser": "^3.3.1",
 		"@testing-library/jest-dom": "^5.16.1",
